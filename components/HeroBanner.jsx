@@ -23,7 +23,7 @@ const HeroBanner = ({ HeroBanner }) => {
                   Primeriza Podcast
                 </h1>
                 <p className="text-lg leading-6 text-[#88BFD4] xl:w-5/12 lg:w-8/12 md:w-10/12  2xl:pr-12 mt-4">
-                  A good idiom for kids is "It's raining cats and dogs." Kids
+                  A good idiom for kids is &quot;It&&apos;;s raining cats and dogs.&quot; Kids
                   know what both cats and dogs are from an early age.
                 </p>
               </div>
