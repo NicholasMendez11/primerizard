@@ -11,3 +11,4 @@ export {default as NewsLetter} from './NewsLetter'
 export {default as About} from './About'
 export {default as Testimonios} from './Testimonios'
 export {default as Partners} from './Partners'
+

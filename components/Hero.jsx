@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Imagen from '../public/assets/mom.png'
 import Image from "next/image";
+import Link from "next/link";
 function Hero() {
     const [show, setShow] = useState(false);
 
@@ -16,7 +17,9 @@ function Hero() {
                             <h1 className="text-3xl lg:text-3xl xl:text-5xl font-medium text-[#b5597e] text-center md:text-left tracking-tighter f-f-i md:w-7/12 leading-tight text-heading-color">Prepárate para lactar a tu bebé con amor y sin miedos</h1>
                             <h2 className="md:w-8/12 py-4 text-center md:text-left md:py-8 text-gray-700 text-lg lg:text-2xl">Asesorías personalizadas y cursos online que te brindan apoyo con tu lactancia desde el embarazo hasta el postparto. </h2>
                             <div className="w-full flex justify-center md:block">
-                                <button className="hover:opacity-90 bg-[#B5597E] py-4 px-5 lg:py-5 lg:px-10 rounded-md text-white font-bold text-lg md:text-sm f-f-p mx-4">Conoce mis cursos</button>
+                                <Link href="#courses">
+                                <button className="hover:opacity-90 bg-[#B5597E] py-4 px-5 lg:py-5 lg:px-10 rounded-md text-white font-bold text-lg md:text-sm f-f-p mx-4">Conoce nuestros cursos</button>
+                                </Link>
                                 <button className="hover:opacity-90 bg-[#B5597E] py-4 px-5 lg:py-5 lg:px-10 rounded-md text-white  font-bold text-lg md:text-sm f-f-p">Agenda una asesoría</button>
                             </div>
                         </div>

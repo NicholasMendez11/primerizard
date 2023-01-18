@@ -18,7 +18,7 @@ const Home = ({ courses, bannerData }) => {
       <NewsLetter />
       <div className="bg-white">
         <div className="products-heading bg-">
-          <h1 className="py-4 text-3xl lg:text-3xl xl:text-4xl font-medium  text-[#b5597e] text-center md:text-center tracking-tighter f-f-i md:w-7/10 leading-tight text-heading-color">
+          <h1 id="courses"  className="py-4 text-3xl lg:text-3xl xl:text-4xl font-medium  text-[#b5597e] text-center md:text-center tracking-tighter f-f-i md:w-7/10 leading-tight text-heading-color">
           Elige el mejor curso para la etapa en la que te encuentras
           </h1>
           <p className="text-center md:text-center text-gray-700 text-9xl font-medium">Las mejores instrucciones de los mejores intructores</p>

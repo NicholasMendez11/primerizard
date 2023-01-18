@@ -15,16 +15,18 @@ function Partners() {
                 We are confident that we can find the process that will help you
                 meet your goals.
               </p>
-             
             </div>
             <div className="w-full md:flex justify-center p-2">
-            <div><img srcSet="https://www.natalben.com/sites/default/files/inline-images/natalben-supra-logo.png" alt="brand"  className="mx-4"/></div>
-            <div><img srcSet="https://www.freelogovectors.net/wp-content/uploads/2022/11/enfamil-logo-freelogovectors.net_-400x400.png" alt="brand"  className="mx-4" /></div>
-            <div><img srcSet="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Philips_AVENT_logo.svg/800px-Philips_AVENT_logo.svg.png?20170103080553" alt="brand"  className="mx-4 w-" /></div>
-           
+              <div>
+                <img
+                  srcSet="https://www.natalben.com/sites/default/files/inline-images/natalben-supra-logo.png"
+                  alt="brand"
+                  className="mx-4"
+                />
+              </div>
             </div>
+          </div>
         </div>
-      </div>
       </div>
     </>
   );

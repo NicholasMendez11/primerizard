@@ -1,15 +1,30 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { toast } from 'react-hot-toast';
+import { initFirebase } from '../firebase/firebaseApp';
+import {getAuth, signInWithPopup, GoogleAuthProvider} from 'firebase/auth'
+import {useAuthState} from "react-firebase-hooks/auth"
+import { useRouter } from 'next/router';
+
+
+
+
 
 const Context = createContext();
 
 export const StateContext = ({ children }) => {
+  const app = initFirebase();
+  console.log(app)
+
+
   const [showCart, setShowCart] = useState(false);
   const [cartItems, setCartItems] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
   const [totalQuantities, setTotalQuantities] = useState(0);
   const [qty, setQty] = useState(1);
+  const [userState, setUserState] = useState(null)
 
+
+  console.log(userState)
   let foundProduct;
   let index;
 
@@ -74,6 +89,28 @@ export const StateContext = ({ children }) => {
      
       return prevQty - 1;
     });
+
+
+   
+
+  }
+
+ //Google Auth section and listeners
+  const provider = new GoogleAuthProvider()
+  const auth = getAuth();
+  const [user,loading] = useAuthState(auth) //Listener de eventos en el estado de la authetification
+  const router = useRouter();
+
+
+  const signIn = async () => {
+    const result = await signInWithPopup(auth,provider);
+    console.log(result.user)
+    setUserState(result.user)
+    router.push("/")
+  }
+  const signOut = async () => {
+    auth.signOut();
+    router.push("/");
   }
 
   return (
@@ -84,7 +121,13 @@ export const StateContext = ({ children }) => {
         cartItems,
         totalPrice,
         totalQuantities,
+        userState,
+        user,
+        loading,
         qty,
+        auth,
+        signOut,
+        setUserState,
         incQty,
         decQty,
         onAdd,
@@ -92,7 +135,8 @@ export const StateContext = ({ children }) => {
         onRemove,
         setCartItems,
         setTotalPrice,
-        setTotalQuantities 
+        setTotalQuantities ,
+        signIn,
       }}
     >
       {children}

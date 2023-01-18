@@ -20,9 +20,9 @@ const HeroBanner = ({ HeroBanner }) => {
             <div className="text-xl relative z-20 bg-gradient-to-r from-[#B5597E] to-transparent w-full h-full z-40 top-0 md:p-16 p-6 flex flex-col justify-between rounded-md ">
               <div>
                 <h1 className="md:text-5xl text-3xl font-bold md:leading-10 leading-9 text-[#abe7ff] sm:w-auto w-64">
-                  Primeriza Podcast
+                  <span className="fontBrand">Primeriza</span> Podcast
                 </h1>
-                <p className="text-lg leading-6 text-[#88BFD4] xl:w-5/12 lg:w-8/12 md:w-10/12  2xl:pr-12 mt-4">
+                <p className="text-lg leading-6 text-[#97bfe9] xl:w-5/12 lg:w-8/12 md:w-10/12  2xl:pr-12 mt-4">
                   A good idiom for kids is &quot;It&&apos;;s raining cats and dogs.&quot; Kids
                   know what both cats and dogs are from an early age.
                 </p>

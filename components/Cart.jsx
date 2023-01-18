@@ -1,17 +1,20 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Link from "next/link";
 import {
   AiOutlineMinus,
   AiOutlinePlus,
   AiOutlineLeft,
-  AiOutlineShopping,
+  AiOutlineUser,
 } from "react-icons/ai";
+import { RiLoginCircleLine } from "react-icons/ri";
 import { TiDeleteOutline } from "react-icons/ti";
 import toast from "react-hot-toast";
 
 import { useStateContext } from "../context/StateContext";
 import { urlFor } from "../lib/client";
 import getStripe from "../lib/getStripe";
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 const Cart = () => {
   const cartRef = useRef();
@@ -22,6 +25,8 @@ const Cart = () => {
     setShowCart,
     toggleCartItemQuanitity,
     onRemove,
+    userState,
+    signIn,
   } = useStateContext();
 
   const handleCheckout = async () => {
@@ -53,65 +58,26 @@ const Cart = () => {
           onClick={() => setShowCart(false)}
         >
           <AiOutlineLeft />
-          <span className="heading">Your Cart</span>
-          <span className="cart-num-items">({totalQuantities} items)</span>
+          <span className="heading">Back</span>
         </button>
 
-        {cartItems.length < 1 && (
-          <div className="empty-cart">
-            <AiOutlineShopping size={150} />
+        {userState == null ? (
+          <div className=" bg-slate-500 flex-col content-center">
+            <RiLoginCircleLine size={150} />
             <h3>Your shopping bag is empty</h3>
             <Link href="/">
-              <button
-                type="button"
-                onClick={() => setShowCart(false)}
-                className="btn"
-              >
-                Continue Shopping
+              <button type="button" onClick={signIn} className="btn">
+                Log in with Google
               </button>
             </Link>
           </div>
-        )}
-
-        <div className="container">
-          {cartItems.length >= 1 &&
-            cartItems.map((item) => (
-              <div className="" key={item._id}>
-                <img
-                  src={urlFor(item?.image[0])}
-                  className="cart-product-image"
-                />
-                <div className="flex-col justify-center items-center w-full">
-                  <div className="">
-                    <h5 className="text-center">{item.name}</h5>
-                    <h4 className="text-center"><span className="text-sm">usd$</span><span className="text-lg font-bold">{item.price}</span></h4>
-                  </div>
-                  <div className="flex justify-end mr-4">
-                    <div>
-                    </div>
-                    <button
-                      type="button"
-                      className="remove-item text-end"
-                      onClick={() => onRemove(item)}
-                    >
-                      <TiDeleteOutline />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))}
-        </div>
-        {cartItems.length >= 1 && (
-          <div className="cart-bottom">
-            <div className="total">
-              <h3>Subtotal:</h3>
-              <h3>${totalPrice}</h3>
-            </div>
-            <div className="btn-container">
-              <button type="button" className="btn bg-[#B5597E]" onClick={handleCheckout}>
-                Pay with Stripe
-              </button>
-            </div>
+        ) : (
+          <div className="">
+            {" "}
+            <div className=" flex flex-col justify-center h-screen ">
+              <img src={userState?.photoURL} alt="Avatar" />
+              <h1>{userState?.displayName}</h1>
+            </div>{" "}
           </div>
         )}
       </div>

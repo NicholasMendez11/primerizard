@@ -1,11 +1,11 @@
 import React from 'react'
 import Head from 'next/head'
-import Navbar from './Navbar'
+import Navbar1 from './Navbar1'
 import Footer from './Footer'
 
 const Layout = ({children}) => {
   return (
-    <div className="layout">
+    <div className="layout ">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -15,7 +15,7 @@ const Layout = ({children}) => {
         <title>Primeriza RD</title>
       </Head>
       <header>
-        <Navbar/>
+        <Navbar1/>
       </header>
       <main className="main-container">
         {children}

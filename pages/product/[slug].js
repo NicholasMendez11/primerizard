@@ -8,16 +8,39 @@ import {
 } from "react-icons/ai";
 import { Product } from "../../components";
 import { useStateContext } from "../../context/StateContext";
+import getStripe from "../../lib/getStripe";
+import toast from "react-hot-toast";
 
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price, instructor, avatar } = product;
   console.log(product);
   const [index, setIndex] = useState(0);
-  const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
+  const { decQty, incQty, qty, onAdd, setShowCart,cartItems } = useStateContext();
+
+  const handleCheckout = async () => {
+    const stripe = await getStripe();
+    console.log(cartItems);
+    const response = await fetch("/api/stripe", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(cartItems),
+    });
+
+    if (response.statusCode === 500) return;
+
+    const data = await response.json();
+    console.log(data);
+    toast.loading("Redirecting...");
+
+    stripe.redirectToCheckout({ sessionId: data.id });
+  };
 
   const HandleBuyNow = () => {
     onAdd(product, qty);
     setShowCart(true);
+    handleCheckout()
   };
 
   return (
