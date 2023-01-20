@@ -11,7 +11,6 @@ import {
 } from "../components";
 import { client } from "../lib/client";
 import ReactPlayer from "react-player";
-import Fab from "../components/subcomponents/Fab";
 
 const Home = ({ courses, bannerData }) => {
   return (
@@ -41,7 +40,7 @@ const Home = ({ courses, bannerData }) => {
       <About />
       <Testimonios />
       <Partners />
-      <Fab/>
+     
 
       {/* <FooterBanner footerBanner={bannerData && bannerData[0]} /> */}
     </>
