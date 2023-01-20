@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Navbar1 from './Navbar1'
+import Navbar from './Navbar1'
 import Footer from './Footer'
 
 const Layout = ({children}) => {
@@ -15,7 +15,7 @@ const Layout = ({children}) => {
         <title>Primeriza RD</title>
       </Head>
       <header>
-        <Navbar1/>
+        <Navbar/>
       </header>
       <main className="main-container">
         {children}
