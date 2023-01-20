@@ -1,5 +1,12 @@
 import Image from "next/image";
 import React from "react";
+import Bebito from '../public/Bebito.png'
+import eikers from '../public/eikers.png'
+import MAMILA from '../public/MAMILA.png'
+import philips from '../public/philips.png'
+import progreso from '../public/progreso.png'
+import Rapeel from '../public/Rapeel.png'
+import SLEEPY from '../public/SLEEPY.png'
 
 function Partners() {
   return (
@@ -16,10 +23,66 @@ function Partners() {
                 meet your goals.
               </p>
             </div>
-            <div className="w-full md:flex justify-center p-2">
+            <div className="w-full md:flex flex-wrap justify-center p-2">
               <div>
                 <img
                   srcSet="https://www.natalben.com/sites/default/files/inline-images/natalben-supra-logo.png"
+                  alt="brand"
+                  className="mx-4 w-[200px]"
+                />
+              </div>
+              <div>
+                <Image
+                  src={Bebito}
+                  alt="brand"
+                  width={200}
+                  className="mx-4"
+                />
+              </div>
+              <div>
+                <Image
+                  src={MAMILA}
+                  width={200}
+                  alt="brand"
+                  className="mx-4"
+                />
+              </div>
+              <div>
+                <Image
+                  src={philips}
+                  width={200}
+                  alt="brand"
+                  className="mx-4"
+                />
+              </div>
+              <div>
+                <Image
+                  src={progreso}
+                  width={200}
+                  alt="brand"
+                  className="mx-4"
+                />
+              </div>
+              <div>
+                <Image
+                  src={Rapeel}
+                  width={200}
+                  alt="brand"
+                  className="mx-4"
+                />
+              </div>
+              <div>
+                <Image
+                  src={SLEEPY}
+                  width={200}
+                  alt="brand"
+                  className="mx-4"
+                />
+              </div>
+              <div>
+                <Image
+                  src={eikers}
+                  width={150}
                   alt="brand"
                   className="mx-4"
                 />
