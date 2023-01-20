@@ -4,7 +4,8 @@ import { GrFacebook, GrTwitter } from "react-icons/gr";
 import logoPrincipal from "../../public/assets/logoPrincipal.png";
 import { useStateContext } from "../../context/StateContext";
 import Image from "next/image";
-function login() {
+
+function Login() {
   const { userState, signIn } = useStateContext();
 
   return (
@@ -87,4 +88,4 @@ function login() {
   );
 }
 
-export default login;
+export default Login;
