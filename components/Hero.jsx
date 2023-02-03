@@ -20,7 +20,9 @@ function Hero() {
                                 <Link href="#courses">
                                 <button className="hover:opacity-90 bg-[#B5597E] py-4 px-5 lg:py-5 lg:px-10 rounded-md text-white font-bold text-lg md:text-sm f-f-p mx-4">Conoce nuestros cursos</button>
                                 </Link>
+                                <Link href="https://calendly.com/nicholasmeeendez/asesoria-personalizada">
                                 <button className="hover:opacity-90 bg-[#B5597E] py-4 px-5 lg:py-5 lg:px-10 rounded-md text-white  font-bold text-lg md:text-sm f-f-p">Agenda una asesoría</button>
+                                </Link>
                             </div>
                         </div>
                         <div className="w-1/2 sm:w-2/5 h-64 md:h-auto m-4 flex items-center overflow-hidden">
