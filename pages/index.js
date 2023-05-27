@@ -32,18 +32,18 @@ const Home = ({ courses, bannerData }) => {
           </p>
 
           <div className="md:w-[80vh] md:h-[80vh] p-2">
-            <VideoPlayer
+            {/* <VideoPlayer
               source={
                 "https://drive.google.com/file/d/1a9MkygwJD4Jq0zBBdCuOc0c5yWHAffSD/preview"
               }
               // provider={"youtube"}
-            />
-            {/* <iframe
+            /> */}
+            <iframe
               src="https://drive.google.com/file/d/1a9MkygwJD4Jq0zBBdCuOc0c5yWHAffSD/preview"
               width="640"
               height="480"
               allow="autoplay"
-            ></iframe> */}
+            ></iframe>
           </div>
         </div>
         <div className="lg:flex md:mt-[-20vh] px-2">
