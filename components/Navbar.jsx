@@ -11,7 +11,7 @@ import { useStateContext } from "../context/StateContext";
 import logo from "../public/assets/Logo-official.webp";
 import Router, { useRouter } from "next/router";
 const Navbar = () => {
-  const { showCart, setShowCart, totalQuantities, userState,auth } =
+  const { showCart, setShowCart, totalQuantities, userState, auth } =
     useStateContext();
   const [IconColor, setIconColor] = useState("#99999F");
   const [IconColor2, setIconColor2] = useState("#99999F");
@@ -29,7 +29,7 @@ const Navbar = () => {
         </p>
         <div className="flex justify-center items-center w-screen">
           <p className="hover:scale-125 cursor-pointer transition m-5 text-[#747478] hover:text-[#bbbbc2]">
-            <Link href="#courses">Cursos Online</Link>
+            <Link href="#courses">Talleres Online</Link>
           </p>
           <p className="hover:scale-125 cursor-pointer transition m-5  text-[#747478] hover:text-[#bbbbc2]">
             Asesorias
@@ -58,7 +58,9 @@ const Navbar = () => {
             onMouseEnter={() => setIconColor("#B5597E")}
             onMouseLeave={() => setIconColor("#99999F")}
           >
-            <p className="hover:scale-125 cursor-pointer transition m-5 text-[#747478] hover:text-[#B5597E]">{userState?.displayName}</p>
+            <p className="hover:scale-125 cursor-pointer transition m-5 text-[#747478] hover:text-[#B5597E]">
+              {userState?.displayName}
+            </p>
           </button>
         )}
         {/* <button

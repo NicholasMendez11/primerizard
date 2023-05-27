@@ -4,11 +4,21 @@ import { urlFor } from "../lib/client";
 import { useStateContext } from "../context/StateContext";
 
 const Product = ({ product }) => {
-  const { image, name, slug, price, details, avatar, instructor } = product;
-  console.log(slug);
+  const {
+    image,
+    name,
+    slug,
+    price,
+    details,
+    avatar,
+    instructor,
+    courseDemo,
+    course,
+  } = product;
+  console.log("info", courseDemo);
   const { onAdd } = useStateContext();
   return (
-    <article className="max-w-md mx-auto mt-4  border border-[#b5597e] rounded-md uradtion-300 hover:shadow-2xl hover:shadow-[#b5597e]">
+    <article className="">
       <img
         src={urlFor(image[0])}
         alt={name}

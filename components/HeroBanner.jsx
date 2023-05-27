@@ -1,38 +1,32 @@
 import React from "react";
 import Link from "next/link";
 import { urlFor } from "../lib/client";
+import { motion } from "framer-motion";
 const HeroBanner = ({ HeroBanner }) => {
+  // src={urlFor(HeroBanner.image)}
   return (
     <>
-      <div className=" w-screenrounded-sm  flex justify-center   bg-[#f6f8f8]">
-        <div className="2xl:mx-auto 2xl:container md:px-20 px-4 md:py-12 py-9">
-          <div className="relative rounded-md">
-            <img
-              src={urlFor(HeroBanner.image)}
-              alt="primeriza podcast"
-              className="w-full h-full rounded-md  object-center object-fill absolute sm:block hidden"
-            />
-            <img
-              src="https://i.ibb.co/LQpxBsc/mobile.png"
-              alt="city view"
-              className="w-full h-full rounded-md absolute object-center object-fill sm:hidden"
-            />
-            <div className="text-xl relative z-20 bg-gradient-to-r from-[#B5597E] to-transparent w-full h-full z-40 top-0 md:p-16 p-6 flex flex-col justify-between rounded-md ">
-              <div>
-                <h1 className="md:text-5xl text-3xl font-bold md:leading-10 leading-9 text-[#abe7ff] sm:w-auto w-64">
-                  <span className="fontBrand">Primeriza</span> Podcast
-                </h1>
-                <p className="text-lg leading-6 text-[#97bfe9] xl:w-5/12 lg:w-8/12 md:w-10/12  2xl:pr-12 mt-4">
-                  A good idiom for kids is &quot;It&&apos;;s raining cats and dogs.&quot; Kids
-                  know what both cats and dogs are from an early age.
-                </p>
-              </div>
-              <div className="md:mt-12 mt-20">
-                <button className="text-base font-medium leading-4 text-[#32b2e5] bg-white sm:w-auto w-full rounded p-4 focus:outline-none hover:bg-gray-100 focus:ring-2 focus:ring-offset-2 focus:ring-white">
-                  Escuchar
-                </button>
-              </div>
-            </div>
+      <div className="py-12 px-4 hover:cursor-pointer">
+        <div className="lg:max-w-[1440px] md:max-w-[744px] max-w-[375px] mx-auto bg-white relative lg:px-10 md:px-6 px-4 py-7">
+          <div className="lg:max-w-[1280px] md:max-w-[696px] max-w-[343px] mx-auto bg-gray-200">
+            <a
+              href="https://www.youtube.com/watch?v=-GI-cavdPjM&ab_channel=PrimerizaRD"
+              target="_blank"
+            >
+              <motion.div
+                initial={{ opacity: 0, x: -300 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 260,
+                  damping: 20,
+                  duration: 1.5,
+                }}
+                className=" justify-center items-center"
+              >
+                <img src={urlFor(HeroBanner.image)} className="w-full h-full" />
+              </motion.div>
+            </a>
           </div>
         </div>
       </div>
