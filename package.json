@@ -1,5 +1,5 @@
 {
-  "name": "eccommerce",
+  "name": "primeriza-rd",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -24,16 +24,12 @@
     "lottie-react": "^2.3.1",
     "next": "13.1.1",
     "paypal-rest-sdk": "^1.8.1",
-    "plyr": "^3.7.8",
     "plyr-react": "^5.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-firebase-hooks": "^5.1.1",
     "react-hot-toast": "^2.2.0",
     "react-icons": "^4.3.1",
-    "react-modal": "^3.16.1",
-    "react-player": "^2.11.0",
-    "stripe": "^8.209.0",
     "uid": "^2.0.2"
   },
   "devDependencies": {
