@@ -15,7 +15,7 @@ const Product = ({ product }) => {
     courseDemo,
     course,
   } = product;
-  console.log("info", courseDemo);
+
   const { onAdd } = useStateContext();
   return (
     <article className="">

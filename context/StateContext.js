@@ -9,7 +9,6 @@ const Context = createContext();
 
 export const StateContext = ({ children }) => {
   const app = initFirebase();
-  console.log(app);
 
   const [showCart, setShowCart] = useState(false);
   const [cartItems, setCartItems] = useState([]);
@@ -19,7 +18,6 @@ export const StateContext = ({ children }) => {
   const [userState, setUserState] = useState(null);
   const [test, setTest] = useState("Nicholas");
 
-  console.log(userState);
   let foundProduct;
   let index;
 
@@ -115,12 +113,12 @@ export const StateContext = ({ children }) => {
       const slugToSent = JSON.parse(signRoute.slug).current;
 
       const result = await signInWithPopup(auth, provider);
-      console.log(result.user);
+
       setUserState(result.user);
       router.push(`/product/${slugToSent}`);
     } else {
       const result = await signInWithPopup(auth, provider);
-      console.log(result.user);
+
       setUserState(result.user);
       router.push("/");
     }

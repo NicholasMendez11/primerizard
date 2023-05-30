@@ -16,8 +16,6 @@ const FooterBanner = ({
     desc,
   },
 }) => {
-
-  console.log('footerBanner',product)
   return (
     <div className="footer-banner-container">
       <div className="banner-desc">

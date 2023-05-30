@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Product,
-  FooterBanner,
   HeroBanner,
   Hero,
   NewsLetter,
@@ -10,7 +9,6 @@ import {
   Partners,
 } from "../components";
 import { client } from "../lib/client";
-import Plyr from "plyr-react";
 import VideoPlayer from "../components/subcomponents/VideoPlayer";
 import { motion } from "framer-motion";
 const Home = ({ courses, bannerData }) => {
@@ -32,30 +30,25 @@ const Home = ({ courses, bannerData }) => {
           </p>
 
           <div className="md:w-[80vh] md:h-[80vh] p-2">
-            {/* <VideoPlayer
+            <VideoPlayer
               source={
-                "https://drive.google.com/file/d/1a9MkygwJD4Jq0zBBdCuOc0c5yWHAffSD/preview"
+                "https://www.youtube.com/watch?v=-GI-cavdPjM&ab_channel=PrimerizaRD"
               }
-              // provider={"youtube"}
-            /> */}
-            <iframe
-              src="https://drive.google.com/file/d/1a9MkygwJD4Jq0zBBdCuOc0c5yWHAffSD/preview"
-              width="640"
-              height="480"
-              allow="autoplay"
-            ></iframe>
+              provider={"youtube"}
+            />
           </div>
         </div>
         <div className="lg:flex md:mt-[-20vh] px-2">
           {courses?.map((product, index) => (
             <motion.div
+              key={product._id}
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               whileHover={{ color: "#b5597e" }}
               transition={{ duration: index + 1 }}
               className="max-w-md mx-auto mt-4  border border-[#b5597e] rounded-md uradtion-300 hover:shadow-2xl hover:shadow-[#b5597e]"
             >
-              <Product key={product._id} product={product} />
+              <Product product={product} />
             </motion.div>
           ))}
         </div>

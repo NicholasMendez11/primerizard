@@ -1,6 +1,4 @@
-import Plyr from "plyr-react";
 import React from "react";
-import ReactPlayer from "react-player";
 import { motion } from "framer-motion";
 const About = () => {
   const videoSrc = {

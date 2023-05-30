@@ -19,17 +19,14 @@ const ProductDetails = ({ product, products }) => {
   const router = useRouter();
   const [itemPurchased, setItemPurchased] = useState(false);
   useEffect(() => {
-    console.log("User: ", user);
-
     async function validateOrders() {
       const orders = await getOrdersByEmail(user.email);
-      console.log("orders: ", orders);
+
       if (
         orders.filter((order) => order.courseName === product.name).length > 0
       ) {
         setItemPurchased(true);
       }
-      console.log(itemPurchased);
     }
     if (user) {
       validateOrders();
@@ -75,9 +72,7 @@ const ProductDetails = ({ product, products }) => {
         },
       });
       return res.data.id;
-    } catch (error) {
-      console.log(error);
-    }
+    } catch (error) {}
   };
 
   const checkPrevPurchase = () => {
@@ -99,7 +94,12 @@ const ProductDetails = ({ product, products }) => {
         >
           <PayPalButtons
             createOrder={() => handlePurchase()}
-            onCancel={(data) => console.log("compra cancelada")}
+            onCancel={(data) =>
+              toast.loading("compra cancelada", {
+                duration: 4000,
+                position: "top-center",
+              })
+            }
             onApprove={(data, action) => handleSucceed(data, action)}
             style={{ layout: "horizontal" }}
           />
@@ -109,7 +109,6 @@ const ProductDetails = ({ product, products }) => {
   };
 
   const handleSucceed = async (data, actions) => {
-    console.log(data, actions);
     await actions.order.capture();
 
     //firestore
@@ -132,7 +131,7 @@ const ProductDetails = ({ product, products }) => {
     if (error) {
       return console.log(error);
     } else {
-      console.log("todo Bien", result);
+      console.log("todo Bien");
     }
 
     router.push("/success");
@@ -233,7 +232,7 @@ const ProductDetails = ({ product, products }) => {
             </div>
             <div className="w-full xl:w-1/3 lg:w-1/3 md:w-1/2 sm:w-1/2 mb-4 mt-4 px-6 ">
               <div className=" bg-white border  border-[#88BFD4] text-center hover:shadow-2xl hover:shadow-[#88BFD4] transition-all duration-300 rounded-lg">
-                <Image src={bannerImage} />
+                <Image src={bannerImage} alt="Banner" />
                 <p className="text-center py-4 px-4  relative pl-3 text-[#b5597e]">
                   <span className="font-light text-md">US$</span>
                   <span className="text-xl font-semibold">{price}</span>

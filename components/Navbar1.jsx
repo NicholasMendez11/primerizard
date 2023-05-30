@@ -10,7 +10,7 @@ function Navbar1() {
     useStateContext();
   const router = useRouter();
   const [visibleMenu, setVisibleMenu] = useState(false);
-  console.log(user);
+
   return (
     <nav className="bg-white px-2 sm:px-4 py-2.5   w-full z-20 top-0 left-0 hover:shadow-lg  hover:shadow-[#b5597e70] transition-shadow ease-in duration-300">
       <div className="container flex flex-wrap items-center justify-between mx-auto">

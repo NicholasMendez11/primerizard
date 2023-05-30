@@ -62,9 +62,7 @@ function SignUp() {
 
   const { paymentRequest, slug } = router.query;
   const signInRoute = router.query;
-  //   console.log("Comming from payment?", paymentRequest);
 
-  //   console.log(router.query);
   return (
     <div className="h-full bg-gradient-to-tl from-[#60b2e6] to-[#ffabbc] w-full py-16 px-4">
       <div className="flex flex-col items-center justify-center">

@@ -13,9 +13,7 @@ function Login() {
 
   const { paymentRequest, slug } = router.query;
   const signInRoute = router.query;
-  console.log("Comming from payment?", paymentRequest);
 
-  console.log(router.query);
   return (
     <section className="h-screen mb-10">
       <div className="container px-6 py-12 h-full">
