@@ -52,6 +52,7 @@ export default function NewsLetter() {
               href="https://prezi.com/view/wVsCOEZS8QfupXm2qQZM/"
               className="hover:opacity-90 bg-[#88BFD4] py-4 px-5 lg:py-5  lg:px-10 rounded-md text-white font-bold text-lg md:text-sm f-f-p mx-4"
               download
+              rel="noreferrer"
             >
               Descubrir
             </a>

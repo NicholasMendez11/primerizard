@@ -9,8 +9,9 @@ const Comunity = ({ comunity }) => {
           Apartado de la comunidad
         </h1>
         <p className="text-base leading-6 text-center text-gray-600 sm:w-96 md:w-9/12 lg:w-5/12 mt-4">
-          If you're looking for random paragraphs, you've come to the right
-          place. When a random word or a random sentence isn't quite enough
+          If you&apos;re looking for random paragraphs, you&apos;ve come to the
+          right place. When a random word or a random sentence isn&apos;t quite
+          enough
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 lg:gap-x-8 md:gap-6 gap-4 lg:mt-12 md:mt-9 mt-6">

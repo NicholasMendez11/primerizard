@@ -13,7 +13,6 @@ const Layout = ({ children }) => {
           content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0"
         ></meta>
         <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
-        <Script src="https://cdn.plyr.io/3.6.8/plyr.js"></Script>
 
         <title>Primeriza RD</title>
       </Head>
@@ -21,6 +20,7 @@ const Layout = ({ children }) => {
         <Navbar />
       </header>
       <main className="overflow-x-hidden">{children}</main>
+      <Script src="https://cdn.plyr.io/3.6.8/plyr.js"></Script>
       <footer>
         <Footer />
       </footer>

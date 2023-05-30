@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { client } from "../../lib/client";
 import { useStateContext } from "../../context/StateContext";
 import VideoPlayer from "../../components/subcomponents/VideoPlayer";
 import getOrdersByEmail from "../../firebase/getData";
