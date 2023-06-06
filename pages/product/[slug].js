@@ -62,7 +62,7 @@ const ProductDetails = ({ product, products }) => {
   const handlePurchase = async () => {
     try {
       const res = await axios({
-        url: "http://localhost:3001/api/payment",
+        url: "http://localhost:3000/api/payment",
         method: "POST",
         headers: {
           "Content-Type": "application/json",
