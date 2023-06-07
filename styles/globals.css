@@ -30,6 +30,14 @@ body {
 ::-webkit-scrollbar {
   width: 0px;
 }
+.heroBackground {
+  background-image: url(../public/heroBackground.jpeg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-attachment: fixed;
+}
 
 a {
   color: inherit;

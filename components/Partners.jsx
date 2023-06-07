@@ -25,8 +25,9 @@ function Partners() {
                 Trabajamos con los mejores colaboradores
               </p>
               <p className="md:w-8/8 py-1 text-center md:text-left md:py-1 text-gray-700 text-lg lg:text-xl">
-                We are confident that we can find the process that will help you
-                meet your goals.
+                Nuestro equipo de colaboradores es la piedra angular de nuestro
+                éxito. Su dedicación, experiencia y pasión nos impulsan a
+                alcanzar nuevas metas.
               </p>
             </motion.div>
             <div className="w-full  grid grid-cols-2 justify-center p-2">
