@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { client, urlFor } from "../../lib/client";
 import { Product } from "../../components";
 import { useStateContext } from "../../context/StateContext";
-import { createClient } from "@sanity/client";
 import { toast, Toaster } from "react-hot-toast";
 import VideoPlayer from "../../components/subcomponents/VideoPlayer";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
@@ -161,7 +160,7 @@ const ProductDetails = ({ product, products }) => {
               </div>
             </div>
             <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-              <img src={urlFor(image && image[0])} alt="courseBanner" />
+              <motion.img src={urlFor(image && image[0])} alt="courseBanner" />
             </div>
           </div>
           <div className="mx-auto container w-full flex xl:flex-row flex-col justify-between items-start mt-12 px-6 lg:px-0">
@@ -224,8 +223,8 @@ const ProductDetails = ({ product, products }) => {
                   </ul>
                 </div>
                 <div className="mt-8 flex-col justify-start items-start">
-                  <div>
-                    <VideoPlayer source={courseDemo} />
+                  <div className="md:w-[50rem] w-80">
+                    <VideoPlayer source={courseDemo} provider={"youtube"} />
                   </div>
                 </div>
               </div>

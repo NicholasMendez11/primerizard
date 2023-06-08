@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { urlFor } from "../lib/client";
 import { useStateContext } from "../context/StateContext";
-
+import { motion } from "framer-motion";
 const Product = ({ product }) => {
   const {
     image,
@@ -19,14 +19,14 @@ const Product = ({ product }) => {
   const { onAdd } = useStateContext();
   return (
     <article className="">
-      <img
+      <motion.img
         src={urlFor(image[0])}
         alt={name}
         className="w-full h-48 rounded-t-md"
       />
       <div className="flex items-center mt-2 pt-3 ml-4 mr-2">
         <div className="flex-none w-10 h-10 rounded-full">
-          <img
+          <motion.img
             src={urlFor(avatar)}
             className="w-full h-full rounded-full"
             alt={instructor}

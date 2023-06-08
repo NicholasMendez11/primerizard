@@ -32,7 +32,7 @@ export default function Testimonios() {
                 a día… Gracias Dios siempre por la labor que hacen cada día
               </p>
               <div className="absolute bottom-0 -mb-4 ml-10">
-                <img
+                <motion.img
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonials-4-svg2.svg"
                   alt="sharp"
                 />
@@ -45,7 +45,7 @@ export default function Testimonios() {
               className="flex items-center mt-7"
             >
               <div className="w-12 h-12 border border-[#b5597e] rounded-full flex items-center justify-center">
-                <img
+                <motion.img
                   src="https://i.ibb.co/R6WQhYj/Mask-Group.png"
                   className="w-10 h-10 rounded-full"
                   alt="profile"
@@ -75,7 +75,7 @@ export default function Testimonios() {
                 quienes nos rodean nos desinforman , se siente como una Familia.
               </p>
               <div className="absolute bottom-0 -mb-4 ml-10">
-                <img
+                <motion.img
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonials-4-svg2.svg"
                   alt="sharp"
                 />
@@ -83,7 +83,7 @@ export default function Testimonios() {
             </motion.div>
             <div className="flex items-center mt-7">
               <div className="w-12 h-12 border border-[#b5597e] rounded-full flex items-center justify-center">
-                <img
+                <motion.img
                   src="https://i.ibb.co/C6bwf12/Mask-Group.png"
                   className="w-10 h-10 rounded-full"
                   alt="profile"
@@ -121,7 +121,7 @@ export default function Testimonios() {
                 para la maternidad.
               </p>
               <div className="absolute bottom-0 -mb-4 ml-10">
-                <img
+                <motion.img
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonials-4-svg2.svg"
                   alt="sharp"
                 />
@@ -129,7 +129,7 @@ export default function Testimonios() {
             </motion.div>
             <div className="flex items-center mt-7">
               <div className="w-12 h-12 border border-[#b5597e] rounded-full flex items-center justify-center">
-                <img
+                <motion.img
                   src="https://i.ibb.co/C6bwf12/Mask-Group.png"
                   className="w-10 h-10 rounded-full"
                   alt="profile"
@@ -164,7 +164,7 @@ export default function Testimonios() {
                 nada a cambio; respeto, unión, hermandad.
               </p>
               <div className="absolute bottom-0 -mb-4 ml-10">
-                <img
+                <motion.img
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonials-4-svg2.svg"
                   alt="sharp"
                 />
@@ -172,7 +172,7 @@ export default function Testimonios() {
             </motion.div>
             <div className="flex items-center mt-7">
               <div className="w-12 h-12 border border-[#b5597e] rounded-full flex items-center justify-center">
-                <img
+                <motion.img
                   src="https://i.ibb.co/C6bwf12/Mask-Group.png"
                   className="w-10 h-10 rounded-full"
                   alt="profile"

@@ -73,7 +73,7 @@ const Cart = () => {
           <div className="">
             {" "}
             <div className=" flex flex-col justify-center h-screen ">
-              <img src={userState?.photoURL} alt="Avatar" />
+              <Image src={userState?.photoURL} alt="Avatar" />
               <h1>{userState?.displayName}</h1>
             </div>{" "}
           </div>

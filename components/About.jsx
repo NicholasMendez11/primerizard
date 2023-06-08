@@ -48,17 +48,17 @@ const About = () => {
         transition={{ duration: 1 }}
         className="lg:mt-14 sm:mt-10 mt-12"
       >
-        <img
+        <motion.img
           className="lg:block hidden w-full"
           src="https://i.ibb.co/GvwJnvn/Group-736.png"
           alt="Group of people Chilling"
         />
-        <img
+        <motion.img
           className="lg:hidden sm:block hidden w-full"
           src="https://i.ibb.co/5sZTmHq/Rectangle-116.png"
           alt="Group of people Chilling"
         />
-        <img
+        <motion.img
           className="sm:hidden block w-full"
           src="https://i.ibb.co/zSxXJGQ/Rectangle-122.png"
           alt="Group of people Chilling"

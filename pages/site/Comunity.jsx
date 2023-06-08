@@ -1,6 +1,6 @@
 import React from "react";
 import { client, urlFor } from "../../lib/client";
-
+import { motion } from "framer-motion";
 const Comunity = ({ comunity }) => {
   return (
     <div className="2xl:mx-auto 2xl:container lg:py-16 lg:px-40 xl:px-20 md:py-12 md:px-6 py-9 px-4">
@@ -20,7 +20,7 @@ const Comunity = ({ comunity }) => {
             className="relative flex items-center justify-center border border-[#b5597e] uradtion-300 hover:shadow-2xl hover:shadow-[#b5597e]"
             key={item._id}
           >
-            <img
+            <motion.img
               src={urlFor(item.image[0].asset)}
               className=" object-cover rounded-md h-[410px]"
               alt="chair"

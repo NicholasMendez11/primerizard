@@ -1,6 +1,4 @@
 import React from "react";
-import Imagen from "../public/assets/baby.png";
-import Image from "next/image";
 import { motion } from "framer-motion";
 export default function NewsLetter() {
   const pdf = "../public/cv.pdf";
@@ -59,7 +57,7 @@ export default function NewsLetter() {
           </div>
         </div>
         <div>
-          <img src="https://i.ibb.co/ZWzmKqL/baby.png" alt="girl" />
+          <motion.img src="https://i.ibb.co/ZWzmKqL/baby.png" alt="girl" />
         </div>
       </div>
     </motion.div>

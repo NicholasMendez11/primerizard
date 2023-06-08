@@ -6,8 +6,7 @@ import { useStateContext } from "../context/StateContext";
 import { useRouter } from "next/router";
 import { AnimatePresence, motion } from "framer-motion";
 function Navbar1() {
-  const { showCart, setShowCart, totalQuantities, userState, signOut, user } =
-    useStateContext();
+  const { signOut, user } = useStateContext();
   const router = useRouter();
   const [visibleMenu, setVisibleMenu] = useState(false);
 
@@ -98,14 +97,14 @@ function Navbar1() {
                         Sobre Nosotros
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link
                         href="/site/Comunity"
                         className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#b5597e] md:p-0 "
                       >
                         Comunidad
                       </Link>
-                    </li>
+                    </li> */}
                     {user && (
                       <li>
                         <Link
@@ -146,8 +145,8 @@ function Navbar1() {
             </li>
             <li>
               <Link
-                href="/site/Comunity"
-                className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#b5597e] md:p-0 "
+                href="/"
+                className=" cursor-not-allowed block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#393537] md:p-0 "
               >
                 Comunidad
               </Link>

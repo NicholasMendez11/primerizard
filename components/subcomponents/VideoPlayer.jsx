@@ -7,7 +7,7 @@ function VideoPlayer({ source, provider }) {
       {
         src: source,
         provider: provider,
-        size: 720,
+        size: 1080,
       },
     ],
   };
