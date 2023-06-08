@@ -6,15 +6,15 @@ function Hero() {
   const [menu, setMenu] = useState(false);
   return (
     <>
-      <div className="relative w-full h-full pb-10">
+      <div className="relative w-full h-full pb-10  bg-gradient-to-b from-[#ffffff] to-[#F2E3E9]">
         <div className="">
-          <Image
+          {/* <Image
             className="absolute bg-cover bg-center w-full h-full inset-0"
             src="/../public/background.jpeg"
             width={1880}
             height={1800}
             alt="background"
-          />
+          /> */}
         </div>
 
         <div className="relative px-4 xl:px-0 container mx-auto md:flex items-center gap-8">

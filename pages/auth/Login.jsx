@@ -56,12 +56,12 @@ function Login() {
                   Recuerdame
                 </label>
               </div>
-              <a
-                href="#!"
+              <Link
+                href="/PasswordReset"
                 className="text-[#ff6c89] hover:text-[#ff6c899b] focus:text-blue-700 active:text-blue-800 duration-200 transition ease-in-out"
               >
                 Olvide mi contraseña
-              </a>
+              </Link>
             </div>
             {/* Submit button */}
             <button

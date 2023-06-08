@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
           content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0"
         ></meta>
         <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+        <link rel="icon" href="../public/icon.png" />
 
         <title>Primeriza RD</title>
       </Head>

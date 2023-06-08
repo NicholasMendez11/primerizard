@@ -1,7 +1,12 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { toast } from "react-hot-toast";
 import { initFirebase } from "../firebase/firebaseApp";
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import {
+  getAuth,
+  signInWithPopup,
+  GoogleAuthProvider,
+  sendPasswordResetEmail,
+} from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useRouter } from "next/router";
 
@@ -108,6 +113,15 @@ export const StateContext = ({ children }) => {
   const [user, loading] = useAuthState(auth); //Listener de eventos en el estado de la authetification
   const router = useRouter();
 
+  const handleResetPassword = async (email) => {
+    try {
+      await sendPasswordResetEmail(auth, email);
+      console.log("Password reset email sent successfully.");
+    } catch (error) {
+      console.error("Error sending password reset email:", error);
+    }
+  };
+
   const signIn = async (signRoute) => {
     if (signRoute.paymentRequest) {
       const slugToSent = JSON.parse(signRoute.slug).current;
@@ -145,6 +159,7 @@ export const StateContext = ({ children }) => {
         signOut,
         setUserState,
         incQty,
+        handleResetPassword,
         decQty,
         onAdd,
         toggleCartItemQuanitity,
