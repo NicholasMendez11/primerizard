@@ -1,20 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
-import {
-  AiOutlineMinus,
-  AiOutlinePlus,
-  AiOutlineLeft,
-  AiOutlineUser,
-} from "react-icons/ai";
+import { AiOutlineLeft } from "react-icons/ai";
+import Image from "next/image";
 import { RiLoginCircleLine } from "react-icons/ri";
-import { TiDeleteOutline } from "react-icons/ti";
+
 import toast from "react-hot-toast";
 
 import { useStateContext } from "../context/StateContext";
-import { urlFor } from "../lib/client";
+
 import getStripe from "../lib/getStripe";
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { useAuthState } from "react-firebase-hooks/auth";
 
 const Cart = () => {
   const cartRef = useRef();
