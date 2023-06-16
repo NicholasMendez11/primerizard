@@ -29,51 +29,77 @@ function Partners() {
                 éxito. Su dedicación, experiencia y pasión nos impulsan a
                 alcanzar nuevas metas.
               </p>
+              <div className="flex flex-row mt-10">
+                <a  target="_blank" href="https://www.instagram.com/escudeard/" rel="noreferrer">
+              <motion.img
+                  srcSet="https://i.ibb.co/LNSfJYF/escudealogo.png"
+                  alt="brand"
+                  className="mx-4 w-[200px] hover:cursor-pointer"
+                  whileInView={{ opacity: 4, x: 0, rotate:0 }}
+                  whileHover={{ rotate: [-5, 5, -5, 5, 0] }}
+                  transition={{ duration: 0.3 }}
+                />
+                  </a>
+                  <a  target="_blank" href="https://www.instagram.com/bebito_rd/?hl=es" rel="noreferrer">
+              <motion.img
+                  srcSet="https://i.ibb.co/8DyT0WH/Logo-Hidra-Rizos-page-0001.jpg"
+                  alt="brand"
+                  className="mx-4 w-[200px] hover:cursor-pointer"
+                  whileInView={{ opacity: 4, x: 0 }}
+                  whileHover={{ rotate: [-5, 5, -5, 5, 0] }}
+                  transition={{ duration: 0.3 }}
+                /></a>
+              </div>
             </motion.div>
+
             <div className="w-full  grid grid-cols-2 justify-center p-2">
               <motion.div>
+              <a  target="_blank" href="https://www.instagram.com/natalbenrd/?hl=es" rel="noreferrer">
                 <motion.img
                   srcSet="https://www.natalben.com/sites/default/files/inline-images/natalben-supra-logo.png"
                   alt="brand"
                   className="mx-4 w-[200px] hover:cursor-pointer"
-                  initial={{ opacity: 0, x: -50 }}
-                  whileInView={{ opacity: 4, x: 0 }}
-                  transition={{ duration: 0.5 }}
-                  whileHover={{ scale: 2 }}
+                  whileInView={{ opacity: 4, x: 0, rotate:0 }}
+                  whileHover={{ rotate: [-5, 5, -5, 5, 0] }}
+                  transition={{ duration: 0.3 }}
                 />
+                </a>
               </motion.div>
+              <a  target="_blank" href="https://www.instagram.com/bebito_rd/?hl=es" rel="noreferrer">
               <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 4, x: 0 }}
-                transition={{ duration: 0.5 }}
-                whileHover={{ scale: 2 }}
+                 whileInView={{ opacity: 4, x: 0, rotate:0 }}
+                 whileHover={{ rotate: [-5, 5, -5, 5, 0] }}
+                 transition={{ duration: 0.3 }}
                 className="hover:cursor-pointer"
               >
                 <Image src={Bebito} alt="brand" width={200} className="mx-4" />
               </motion.div>
+              </a>
+              <a  target="_blank" href="https://www.instagram.com/mamilascleans/?hl=es" rel="noreferrer">
               <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 4, x: 0 }}
-                transition={{ duration: 0.6 }}
-                whileHover={{ scale: 2 }}
+                whileInView={{ opacity: 4, x: 0, rotate:0 }}
+                whileHover={{ rotate: [-5, 5, -5, 5, 0] }}
+                transition={{ duration: 0.3 }}
                 className="hover:cursor-pointer"
               >
                 <Image src={MAMILA} width={200} alt="brand" className="mx-4" />
               </motion.div>
+              </a>
+              <a  target="_blank" href="https://www.instagram.com/philipsaventrd/?hl=es" rel="noreferrer">
               <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 4, x: 0 }}
-                transition={{ duration: 0.7 }}
-                whileHover={{ scale: 2 }}
+                 whileInView={{ opacity: 4, x: 0, rotate:0 }}
+                 whileHover={{ rotate: [-5, 5, -5, 5, 0] }}
+                 transition={{ duration: 0.3 }}
                 className="hover:cursor-pointer"
               >
                 <Image src={philips} width={200} alt="brand" className="mx-4" />
               </motion.div>
+              </a>
+              <a  target="_blank" href="https://www.instagram.com/almacenesprogreso/?hl=es" rel="noreferrer">
               <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 4, x: 0 }}
-                transition={{ duration: 0.8 }}
-                whileHover={{ scale: 2 }}
+               whileInView={{ opacity: 4, x: 0, rotate:0 }}
+               whileHover={{ rotate: [-5, 5, -5, 5, 0] }}
+               transition={{ duration: 0.3 }}
                 className="hover:cursor-pointer"
               >
                 <Image
@@ -83,33 +109,37 @@ function Partners() {
                   className="mx-4"
                 />
               </motion.div>
+              </a>
+              <a  target="_blank" href="https://www.instagram.com/repelaidrd/?hl=es" rel="noreferrer">
               <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 4, x: 0 }}
-                transition={{ duration: 0.9 }}
-                whileHover={{ scale: 2 }}
+                whileInView={{ opacity: 4, x: 0, rotate:0 }}
+                whileHover={{ rotate: [-5, 5, -5, 5, 0] }}
+                transition={{ duration: 0.3 }}
                 className="hover:cursor-pointer"
               >
                 <Image src={Rapeel} width={200} alt="brand" className="mx-4" />
               </motion.div>
+              </a>
+              <a  target="_blank" href="https://www.instagram.com/sleepy.rd/?hl=es" rel="noreferrer">
               <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 4, x: 0 }}
-                transition={{ duration: 1 }}
-                whileHover={{ scale: 2 }}
+                 whileInView={{ opacity: 4, x: 0, rotate:0 }}
+                 whileHover={{ rotate: [-5, 5, -5, 5, 0] }}
+                 transition={{ duration: 0.3 }}
                 className="hover:cursor-pointer"
               >
                 <Image src={SLEEPY} width={200} alt="brand" className="mx-4" />
               </motion.div>
+              </a>
+              <a  target="_blank" href="https://www.instagram.com/eickersbabystore/?hl=es" rel="noreferrer">
               <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 4, x: 0 }}
-                transition={{ duration: 1.1 }}
-                whileHover={{ scale: 2 }}
+               whileInView={{ opacity: 4, x: 0, rotate:0 }}
+               whileHover={{ rotate: [-5, 5, -5, 5, 0] }}
+               transition={{ duration: 0.3 }}
                 className="hover:cursor-pointer"
               >
                 <Image src={eikers} width={150} alt="brand" className="mx-4" />
               </motion.div>
+              </a>
             </div>
           </div>
         </div>

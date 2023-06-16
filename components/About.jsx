@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Logo from "../public/assets/PrimerizaRD_logo.webp";
+import Talk1 from "../public/talk.jpeg"
 const About = () => {
   const videoSrc = {
     type: "video",
@@ -114,7 +115,7 @@ const About = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1 }}
                 className="  "
-                src="https://bizzabo.com/wp-content/uploads/2021/09/womens-conference-girlboss.png"
+                src="https://i.ibb.co/7g6JyDR/8e084c60-246f-41b3-bd2c-2cdc13955348.jpg"
                 alt="Group of people Chilling"
               />
             </div>
@@ -126,7 +127,7 @@ const About = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1 }}
                 className="px-16 mt-10"
-                src="https://bizzabo.com/wp-content/uploads/2021/09/womens-conference-girlboss.png"
+                src="https://i.ibb.co/7tsh5Zf/IMG-7880.jpg"
                 alt="Group of people Chilling"
               />
             </div>
@@ -146,16 +147,7 @@ const About = () => {
                 han sido una referencia en cada una de nuestras actividades a lo
                 largo de los años.
               </p>
-              <p className=" text-center md:text-left  text-gray-700 text-lg lg:text-2xl mr-20">
-                Esta actividad conto con la asistencia de 45 madres, las cuales
-                recibieron regalos de Productos Palmers, Mamilas Cleans,
-                Mamacare, Agua Alaska, entre otros. Nuestro equipo directivo
-                (que para este momento no era denominado de esta forma) también
-                se encargo de que las madres, además de recibir regalos,
-                recibieran Kits de bienvenida de nuestros eventos, los cuales
-                han sido una referencia en cada una de nuestras actividades a lo
-                largo de los años.
-              </p>
+              
             </motion.div>
             <div>
               <p className=" w-screen text-center md:text-left  text-gray-700 text-lg lg:text-2xl mt-20 container">

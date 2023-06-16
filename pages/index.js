@@ -18,7 +18,10 @@ const Home = ({ courses, bannerData }) => {
       <HeroBanner HeroBanner={bannerData.length && bannerData[0]} />
       <NewsLetter />
       <div className="bg-white mb-0 ">
-        <div className=" flex flex-col gap-4 items-center">
+
+        {/* Esta es la seccion de los talleres, una vez esten listos puedes volver a activarlo */}
+        {/* Esta casi todo listo con este paso, solo falta cambiar las credenciales de paypal para la cuenta de Alfania */}
+        {/* <div className=" flex flex-col gap-4 items-center">
           <h1
             id="courses"
             className="py-4 text-3xl font-medium  text-[#b5597e] text-center md:text-center tracking-tighter f-f-i md:w-7/10 leading-tight text-heading-color"
@@ -54,7 +57,7 @@ const Home = ({ courses, bannerData }) => {
         </div>
         <h1 className="block h1x-5 mt-5 text-center hover:text-[#b5597e] hover:cursor-pointer">
           Ver todos los Talleres
-        </h1>
+        </h1> */}
       </div>
       <About />
       <Testimonios />

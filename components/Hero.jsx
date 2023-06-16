@@ -31,11 +31,19 @@ function Hero() {
               </h2>
             </div>
             <div className="lg:flex">
+         
               <button className="hidden md:block hover:opacity-90 text-base w-full xl:text-base xl:w-6/12 mt-4 xl:mt-8 f-f-r p-4  bg-[#b5597e] text-white font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 rounded-lg">
-                Conoce nuestros talleres
+              <a  href="#about">
+                Sobre Nostros
+                </a>
               </button>
+              
               <button className="hidden md:block hover:opacity-90 text-base w-full xl:text-base xl:w-6/12 mt-4 xl:mt-8 f-f-r p-4 ml-3 bg-[#b5597e] text-white font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 rounded-lg">
-                Agenda una Asesoria
+              <a   target="_blank"
+      rel="noopener noreferrer" href="https://www.youtube.com/watch?v=-GI-cavdPjM&t=28s&ab_channel=PrimerizaRD">
+               
+                Escucha Nuestro Podcast
+                </a>
               </button>
             </div>
           </div>
@@ -46,10 +54,10 @@ function Hero() {
             role="img"
           />
           <button className="md:hidden hover:opacity-90 text-base w-full xl:text-base xl:w-6/12 mt-4 xl:mt-8 f-f-r py-4  bg-[#b5597ef9] text-white font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 rounded-lg p-9">
-            Conoce nuestros talleres
+          Sobre Nosotros
           </button>
           <button className="md:hidden hover:opacity-90 text-base w-full xl:text-base xl:w-6/12 mt-4 xl:mt-8 f-f-r py-4  bg-[#b5597ef9] text-white font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 rounded-lg p-9">
-            Agenda una Asesoria
+            Escucha Nuestro Podcast
           </button>
         </div>
       </div>

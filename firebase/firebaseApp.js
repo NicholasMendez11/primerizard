@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCH2tXdaf3tugJZoxwNXrvKVJH-gW6q0Gk",
-  authDomain: "primeriza-rd.firebaseapp.com",
-  projectId: "primeriza-rd",
-  storageBucket: "primeriza-rd.appspot.com",
-  messagingSenderId: "795148533198",
-  appId: "1:795148533198:web:7e55aaf8e26987f5b9bf9f",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
@@ -20,7 +20,7 @@ export const initFirebase = () => {
   return app;
 };
 
-// NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyCH2tXdaf3tugJZoxwNXrvKVJH-gW6q0Gk
+// process.env.NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyCH2tXdaf3tugJZoxwNXrvKVJH-gW6q0Gk
 // NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=primeriza-rd.firebaseapp.com
 // NEXT_PUBLIC_FIREBASE_PROJECT_ID=primeriza-rd
 // NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=primeriza-rd.appspot.com
