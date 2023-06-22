@@ -84,8 +84,8 @@ export default function Testimonios() {
             <div className="flex items-center mt-7">
               <div className="w-12 h-12 border border-[#b5597e] rounded-full flex items-center justify-center">
                 <motion.img
-                  src="https://i.ibb.co/C6bwf12/Mask-Group.png"
-                  className="w-10 h-10 rounded-full"
+                  src="https://i.ibb.co/pPnDBst/Perla-Navarro.jpg"
+                  className="w-10 h-10 rounded-full "
                   alt="profile"
                 />
               </div>
@@ -130,7 +130,7 @@ export default function Testimonios() {
             <div className="flex items-center mt-7">
               <div className="w-12 h-12 border border-[#b5597e] rounded-full flex items-center justify-center">
                 <motion.img
-                  src="https://i.ibb.co/C6bwf12/Mask-Group.png"
+                  src="https://i.ibb.co/CPqHhRS/Yuleisy-Rosario.jpg"
                   className="w-10 h-10 rounded-full"
                   alt="profile"
                 />

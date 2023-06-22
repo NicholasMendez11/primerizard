@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Logo from "../public/assets/PrimerizaRD_logo.webp";
-import Talk1 from "../public/talk.jpeg"
+import HistoryBanner from '../public/bannerNuestraHistoria.png'
 const About = () => {
   const videoSrc = {
     type: "video",
@@ -24,7 +23,7 @@ const About = () => {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 4, x: 0 }}
           transition={{ duration: 1 }}
-          className="text-3xl lg:text-3xl xl:text-4xl font-medium  text-[#b5597e] text-center md:text-left tracking-tighter f-f-i md:w-7/10 leading-tight text-heading-color"
+          className="text-3xl lg:text-3xl xl:text-4xl font-medium  text-[#b5597e]  md:text-left tracking-tighter f-f-i md:w-7/10 leading-tight text-heading-color"
         >
           ¡Hola! Somos{" "}
           <span className="primerizaLetter text-[#88BFD4]">Primeriza RD</span>
@@ -33,11 +32,11 @@ const About = () => {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 4, x: 0 }}
           transition={{ duration: 1 }}
-          className="md:w-8/8 py-1 text-center md:text-left md:py-1 text-gray-700 text-lg lg:text-2xl"
+          className="md:w-8/8 py-1  md:text-left md:py-1 text-gray-700 text-lg lg:text-2xl"
         >
           PrimerizaRD nace por el interés de Alfania Mendoza de compartir con
           otras madres primerizas sus vivencias, cursos e información aprendida
-          en el embarazo, y lo hace desde un grupo que inicio el 3 de Julio del
+          en el embarazo, y lo hace desde un grupo que inició el 3 de Julio del
           2018 cuyo nombre era “Primerizas”, las mismas eran integrantes de las
           clases prenatales.
         </motion.p>
@@ -49,21 +48,12 @@ const About = () => {
         transition={{ duration: 1 }}
         className="lg:mt-14 sm:mt-10 mt-12"
       >
-        <motion.img
-          className="lg:block hidden w-full"
-          src="https://i.ibb.co/GvwJnvn/Group-736.png"
-          alt="Group of people Chilling"
-        />
-        <motion.img
-          className="lg:hidden sm:block hidden w-full"
-          src="https://i.ibb.co/5sZTmHq/Rectangle-116.png"
-          alt="Group of people Chilling"
-        />
-        <motion.img
-          className="sm:hidden block w-full"
-          src="https://i.ibb.co/zSxXJGQ/Rectangle-122.png"
-          alt="Group of people Chilling"
-        />
+       <Image
+       src={HistoryBanner}
+       alt="Banner de nuestra historia"
+       className="w-screen">
+
+       </Image>
       </motion.div>
 
       <div className="lg:mt-16 sm:mt-12 mt-16 flex lg:flex-row justify-between flex-col lg:gap-8 gap-12">
@@ -137,7 +127,7 @@ const About = () => {
               transition={{ duration: 1 }}
               className="container"
             >
-              <p className="mt-10 py-5 text-center md:text-left md:py-5 text-gray-700 text-lg lg:text-2xl m-r20">
+              <p className="mt-10 py-5 md:text-left md:py-5 text-gray-700 text-lg lg:text-2xl m-r20">
                 Esta actividad conto con la asistencia de 45 madres, las cuales
                 recibieron regalos de Productos Palmers, Mamilas Cleans,
                 Mamacare, Agua Alaska, entre otros. Nuestro equipo directivo
@@ -150,7 +140,7 @@ const About = () => {
               
             </motion.div>
             <div>
-              <p className=" w-screen text-center md:text-left  text-gray-700 text-lg lg:text-2xl mt-20 container">
+              <p className=" w-screen  md:text-left  text-gray-700 text-lg lg:text-2xl mt-20 container">
                 Para el 2020 la comunidad ya contaba casi con 10mil seguidores
                 mediante las redes y se organizó una estructura en los grupos
                 para separar las madres embarazadas, lactantes, en etapa de
@@ -159,8 +149,8 @@ const About = () => {
                 ExpoPrimerizaRD, para la cual nuestra comunidad congrego mas de
                 mil madres con interés en aprender sobre temas de maternidad
               </p>
-              <Image src={Logo} className="h-1/2 w-1/2 self-center" />
-              <p className=" w-screen text-center md:text-left  text-gray-700 text-lg lg:text-2xl container">
+              {/* <Image src={Logo} className="h-1/2 w-1/2 " /> */}
+              <p className=" w-screen  md:text-left  text-gray-700 text-lg lg:text-2xl container">
                 En el 2023 iniciamos con el podcast y haciendo uso de otras
                 herramientas de trabajo de las cuales hoy eres parte al leer
                 nuestra página WEB.

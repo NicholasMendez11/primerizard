@@ -20,7 +20,7 @@ export default function NewsLetter() {
               whileInView={{ opacity: 1 }}
               className="text-sm leading-3 font-semibold text-[#b5597e] w-screen text-center md:text-left "
             >
-              Descargalo ya
+              Descárgalo ya
             </motion.p>
           </div>
           <div className="xl:mt-4 mt-2">

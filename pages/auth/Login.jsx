@@ -23,14 +23,14 @@ function Login() {
           </div>
           <div className="md:w-8/12 lg:w-5/12 lg:ml-20">
             <h1 className="text-center text-[#ff6c89] mb-10 text-xl animate-pulse">
-              Incia sesion con tu cuenta primeriza
+            Inicia sesión con tu cuenta primeriza
             </h1>
             {/* Email input */}
             <div className="mb-6">
               <input
                 type="text"
                 className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                placeholder="Correo Electronico"
+                placeholder="Correo Electrónico"
               />
             </div>
             {/* Password input */}
@@ -68,7 +68,7 @@ function Login() {
               type="submit"
               className="inline-block px-7 py-3 bg-[#ff6c89] text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-[#ff6c899b] hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out w-full"
             >
-              Iniciar sesion
+              Iniciar sesión
             </button>
             <div className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5">
               <p className="text-center font-semibold mx-4 mb-0">O</p>
@@ -112,10 +112,10 @@ function Login() {
             </div>
             <div>
               <p className="flex justify-center mt-10 ">
-                No tienes una cuenta?&nbsp;{" "}
+              ¿No tienes una cuenta?&nbsp;{" "}
                 <Link href={"/auth/SignUp"}>
                   <span className="text-[#ff6c89] hover:text-[#ff6c899b] hover:cursor-pointer">
-                    Creala!
+                  ¡Creala!
                   </span>
                 </Link>
               </p>

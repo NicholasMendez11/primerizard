@@ -12,8 +12,8 @@ function Partners() {
   return (
     <>
       <div className="px-4 py-12 bg-white">
-        <div className="lg:max-w-[1440px] md:max-w-[744px] max-w-[375px] w-full  py-12 lg:px-10  md:px-6 px-4 bg-white mx-auto">
-          <div className="flex flex-col lg:justify-between lg:flex-row gap-x-8 gap-y-8">
+        <div className="lg:max-w-[1440px] md:max-w-[744px] max-w-[375px] w-full  py-12 lg:px-10  md:px-6 px-4 bg-white mx-auto flex flex-wrap">
+          <div className="flex flex-row lg:justify-between lg:flex-row gap-x-8 gap-y-8 flex-wrap ">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 4, x: 0 }}
@@ -29,7 +29,7 @@ function Partners() {
                 éxito. Su dedicación, experiencia y pasión nos impulsan a
                 alcanzar nuevas metas.
               </p>
-              <div className="flex flex-row mt-10">
+              <div className="flex flex-row mt-10 flex-wrap">
                 <a  target="_blank" href="https://www.instagram.com/escudeard/" rel="noreferrer">
               <motion.img
                   srcSet="https://i.ibb.co/LNSfJYF/escudealogo.png"
@@ -49,16 +49,35 @@ function Partners() {
                   whileHover={{ rotate: [-5, 5, -5, 5, 0] }}
                   transition={{ duration: 0.3 }}
                 /></a>
-              </div>
-            </motion.div>
+                 <a href="https://www.instagram.com/palmersrd/" target="_blank" rel="noreferrer">
+                <motion.img srcSet="https://i.ibb.co/hDbWKyQ/palmer.jpg" alt="palmer" border="0" className=" mx-4 w-[200px] hover:cursor-pointer"
+                  whileInView={{ opacity: 4, x: 0 }}
+                  whileHover={{ rotate: [-5, 5, -5, 5, 0] }}
+                  transition={{ duration: 0.3 }} />
+                </a>
+                <a href="https://www.instagram.com/onyourparty/" target="_blank" rel="noreferrer">
+                <motion.img srcSet="https://i.ibb.co/7XB78t2/on.png" alt="on" border="0" className=" mx-4 w-[200px] hover:cursor-pointer"
+                  whileInView={{ opacity: 4, x: 0 }}
+                  whileHover={{ rotate: [-5, 5, -5, 5, 0] }}
+                  transition={{ duration: 0.3 }}/>
+                </a>
+                <a href="https://www.instagram.com/grace.babystorelv/" target="_blank" rel="noreferrer">
+                <motion.img srcSet="https://i.ibb.co/VpVXVQL/grace.png" alt="grace" border="0" className=" mx-4 w-[200px] hover:cursor-pointer"
+                  whileInView={{ opacity: 4, x: 0 }}
+                  whileHover={{ rotate: [-5, 5, -5, 5, 0] }}
+                  transition={{ duration: 0.3 }}/>
+                </a>
+               
+              
+     
 
-            <div className="w-full  grid grid-cols-2 justify-center p-2">
+           
               <motion.div>
               <a  target="_blank" href="https://www.instagram.com/natalbenrd/?hl=es" rel="noreferrer">
                 <motion.img
                   srcSet="https://www.natalben.com/sites/default/files/inline-images/natalben-supra-logo.png"
                   alt="brand"
-                  className="mx-4 w-[200px] hover:cursor-pointer"
+                  className="mx-4 w-[400px] hover:cursor-pointer"
                   whileInView={{ opacity: 4, x: 0, rotate:0 }}
                   whileHover={{ rotate: [-5, 5, -5, 5, 0] }}
                   transition={{ duration: 0.3 }}
@@ -127,7 +146,7 @@ function Partners() {
                  transition={{ duration: 0.3 }}
                 className="hover:cursor-pointer"
               >
-                <Image src={SLEEPY} width={200} alt="brand" className="mx-4" />
+                <Image src={SLEEPY} width={400} alt="brand" className="mx-4" />
               </motion.div>
               </a>
               <a  target="_blank" href="https://www.instagram.com/eickersbabystore/?hl=es" rel="noreferrer">
@@ -140,7 +159,10 @@ function Partners() {
                 <Image src={eikers} width={150} alt="brand" className="mx-4" />
               </motion.div>
               </a>
-            </div>
+             
+                </div>
+                </motion.div>
+                
           </div>
         </div>
       </div>
