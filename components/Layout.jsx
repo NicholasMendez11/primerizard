@@ -4,7 +4,6 @@ import Navbar from "./Navbar1";
 import Footer from "./Footer";
 import Fab from "./subcomponents/Fab";
 import Script from "next/script";
-import favicon from '../public/favicon.ico'
 const Layout = ({ children }) => {
   return (
     <div className="layout ">
@@ -14,8 +13,7 @@ const Layout = ({ children }) => {
           content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0"
         ></meta>
         <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
-        {/* <link rel="" href="../public/icon.png" /> */}
-      <link rel="shortcut icon" href={favicon} /> 
+        <link rel="icon" href="../public/icon.png" />
 
         <title>Primeriza RD</title>
       </Head>
