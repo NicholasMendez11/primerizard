@@ -3,7 +3,7 @@ import Link from "next/link";
 import { urlFor } from "../lib/client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import backgroundBanner from "../public/backgroundBanner.jpeg";
+import backgroundBanner from "../public/backgroundBanner.png";
 const HeroBanner = ({ HeroBanner }) => {
   console.log(HeroBanner);
   // src={urlFor(HeroBanner.image)}
